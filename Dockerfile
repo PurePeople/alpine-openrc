@@ -1,10 +1,17 @@
 FROM dockage/alpine:3.6
 MAINTAINER Mohammad Abdoli Rad <m.abdolirad@gmail.com>
 
+LABEL org.label-schema.name="alpine-openrc" \
+        org.label-schema.vendor="Dockage" \
+        org.label-schema.description="Docker image uses openRC as a process supervision on Alpine Linux" \
+        org.label-schema.vcs-url="https://github.com/dockage/alpine-openrc" \
+        org.label-schema.version="0.24.1" \
+        org.label-schema.license="MIT"
+
 RUN set -x \
-    && apk add --no-cache openrc \
+    && apk add --no-cache openrc=0.24.1-r2 \
     # Disable getty's
-    && sed -i 's/^\(tty\d\:\:\)/#\1/gp' /etc/inittab \
+    && sed -i 's/^\(tty\d\:\:\)/#\1/g' /etc/inittab \
     && sed -i \
         # Change subsystem type to "docker"
         -e 's/#rc_sys=".*"/rc_sys="docker"/g' \
