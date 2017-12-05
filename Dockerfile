@@ -1,11 +1,11 @@
-FROM dockage/alpine:3.7
+FROM dockage/alpine:3.5
 MAINTAINER Mohammad Abdoli Rad <m.abdolirad@gmail.com>
 
 LABEL org.label-schema.name="alpine-openrc" \
         org.label-schema.vendor="Dockage" \
         org.label-schema.description="Docker image uses openRC as a process supervision on Alpine Linux" \
         org.label-schema.vcs-url="https://github.com/dockage/alpine-openrc" \
-        org.label-schema.version="3.7" \
+        org.label-schema.version="3.5" \
         org.label-schema.license="MIT"
 
 RUN set -x \
