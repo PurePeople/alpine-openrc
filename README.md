@@ -1,3 +1,5 @@
+# Deprecated
+## Please use `*-openrc` branches of [dockage/alpine](https://github.com/dockage/alpine) instead of this project. 
 # alpine-openrc [![Docker Pulls](https://img.shields.io/docker/pulls/dockage/alpine-openrc.svg)](https://hub.docker.com/r/dockage/alpine-openrc/) [![Docker Stars](https://img.shields.io/docker/stars/dockage/alpine-openrc.svg?style=flat)](https://hub.docker.com/r/dockage/alpine-openrc/) [![MicroBadger](https://images.microbadger.com/badges/image/dockage/alpine-openrc:3.7.svg)](https://microbadger.com/images/dockage/alpine-openrc:3.7) [![Docker Build Status](https://img.shields.io/docker/build/dockage/alpine-openrc.svg)](https://hub.docker.com/r/dockage/alpine-openrc/) [![Docker Automated build](https://img.shields.io/docker/automated/dockage/alpine-openrc.svg)](https://hub.docker.com/r/dockage/alpine-openrc/)
     
 [OpenRC](https://en.wikipedia.org/wiki/OpenRC) is the default init system of [Gentoo](https://gentoo.org), [Alpine Linux](https://alpinelinux.org              ) and other Linux distributions, which means that the software packages and daemons of those distributions support it, coming with or using the available scripts.
